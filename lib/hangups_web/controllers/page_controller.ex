@@ -5,8 +5,8 @@ defmodule HangupsWeb.PageController do
     # The home page is often custom made,
     # so skip the default app layout.
 
-    for index <- 1..10 do
-      Process.sleep(index * 10_000)
+    for index <- 1..3 do
+      Process.sleep(10_000)
       IO.inspect("#{inspect(self())} running #{index}")
     end
 
